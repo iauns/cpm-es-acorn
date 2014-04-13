@@ -42,18 +42,16 @@ CPM_AddModule("es"
 
 # ++ MODULE: ES Cereal
 CPM_AddModule("es_cereal"
-  SOURCE_DIR "../cpm-es-cereal"
-  USE_EXISTING_VER TRUE
-  EXPORT_MODULE TRUE
-  )
+  GIT_REPOSITORY "https://github.com/iauns/cpm-es-cereal"
+  GIT_TAG "origin/master"
+  EXPORT_MODULE TRUE)
 
 # ++ MODULE: ES Systems
 CPM_AddModule("es_systems"
   GIT_REPOSITORY "https://github.com/iauns/cpm-es-systems"
   GIT_TAG "origin/master"
   USE_EXISTING_VER TRUE
-  EXPORT_MODULE TRUE
-  )
+  EXPORT_MODULE TRUE)
 
 # I don't want more than one version of this module running around.
 CPM_ForceOnlyOneModuleVersion()
