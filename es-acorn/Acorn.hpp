@@ -85,6 +85,13 @@ public:
   /// allocation.
   bool displayEntityVersusSystemInfo(uint64_t entityID, const std::string& name);
 
+  /// Registers a system with the SystemCore.
+  template <typename T>
+  void registerSystem()
+  {
+    mSystems->registerSystem<T>();
+  }
+
 protected:
 
   /// Get the system core.
